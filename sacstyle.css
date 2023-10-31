@@ -1,0 +1,89 @@
+header{
+    background-color: #525f64;
+    z-index: 600;
+    height: 15%;
+    width: 100%;
+    position:fixed;
+    font-weight: 200;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    top: 4%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav h1{
+    color: #ffffff;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav li{
+    font-weight: 100;
+    font-size: 17px;
+    width:50%;
+    text-decoration: none;
+}
+nav a{
+    margin: 8px;
+    text-decoration: none;
+    color: rgb(177, 186, 190);
+    margin: 5px;
+    padding: 5px;
+    transition: 0.2s;
+    
+}
+nav a:hover{
+    color: rgb(231, 233, 235);
+    text-decoration: underline;
+}
+
+nav ul li a:hover .subnav1 li{
+    display: block;
+}
+nav ul li a:hover .subnav1{
+    z-index: 999;
+    position: absolute;
+    background:transparent;  
+    width: 100%;
+    margin: 10px;
+    display: none;
+}
+
+.about{
+    color: #565454;
+    padding-top: 15%;
+    padding-left: 26px;
+    text-align:center;
+}
+.about p:first-letter{
+    font-size: 17px;
+    padding-left: 30px;
+}
+.about{
+    color: #565454;
+    padding-top: 15%;
+    padding-left: 26px;
+    text-align:center;
+}
+.about p:first-letter{
+    font-size: 17px;
+    padding-left: 30px;
+}
+.faculty{
+    color: #565454;
+    padding-top: 5%;
+    padding-left: 26px;
+    text-align:center;
+}
+.faculty p:first-letter{
+    font-size: 18px;
+    padding-left: 30px;
+}
