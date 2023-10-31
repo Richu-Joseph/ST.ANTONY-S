@@ -24,6 +24,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 nav li{
     font-weight: 100;
@@ -45,21 +46,57 @@ nav a:hover{
     text-decoration: underline;
 }
 
-nav ul li a:hover .subnav1 li{
+.subnav1{
     display: block;
-}
-nav ul li a:hover .subnav1{
-    z-index: 999;
     position: absolute;
-    background:transparent;  
-    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: #525f64;
+}
+.subnav1 ul{
+    display: block;
     margin: 10px;
-    display: none;
+}
+.subnav1 ul li{
+    width: 150px;
+    padding: 10px;
 }
 
-.about{
+.subnav2{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #525f64;
+}
+.subnav2 ul{
+    display: block;
+    margin: 10px;
+}
+.subnav2 ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+.subnav3{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #525f64;
+}
+.subnav3 ul{
+    display: block;
+    margin: 10px;
+}
+.subnav3 ul li{
+    width: 150px;
+    padding: 10px;
+}
+main{
+    background-image: linear-gradient(#c5cbcd);
     color: #565454;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-left: 26px;
     text-align:center;
 }
@@ -69,7 +106,7 @@ nav ul li a:hover .subnav1{
 }
 .about{
     color: #565454;
-    padding-top: 15%;
+    padding-top: 5%;
     padding-left: 26px;
     text-align:center;
 }
@@ -86,4 +123,54 @@ nav ul li a:hover .subnav1{
 .faculty p:first-letter{
     font-size: 18px;
     padding-left: 30px;
+}
+
+#events{
+    width: 60%;
+    margin-top: 90px;
+    color: #565454;
+    text-align: center;
+}
+#events h2{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+#events .card{
+    margin: 20px;
+}
+#contact{
+    margin-top: 100px;
+    height: 500px;
+    width: 700px;
+}
+#contact h2{
+    margin-bottom: 20px;
+}
+
+footer{
+    position:relative;
+    background-color: #8398a1;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    padding: 20;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 40%;
+    padding-right: 40%;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.icons{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.fa:hover{
+    color: white;
+    column-gap: 5px;
+    display: inline-block;
 }
